@@ -40,7 +40,10 @@ I guess the clock should check for config changes when it's awake? put them on B
 
 I'm using virtualenvwrapper these days.
 
-pip3 install PIL
+  source 
+  mkenv
+  pip3 install PIL
+
 
 showtime.py will generate a PNG file once per minute that simulates the image that will be sent to Inky.
 
