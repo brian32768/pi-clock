@@ -4,8 +4,16 @@
 # 2. Sleep for 60 seconds
 # 3. Repeat
 
-Off to work on another project now. One that generates income. 
-TODO: add actual code here. :-)
+import time
+import datetime
+import board
+import busio
+from adafruit_bme280 import Adafruit_BME280
+from adafruit_bme280 import Adafruit_BME280_I2C
+
+import inkyphat
+import sys
+from PIL import ImageFont
 
 # We will not hit the remote weatber server every minute,
 weather_interval=15
@@ -13,7 +21,7 @@ weather_countdown=0
 
 um how do I do a class in python again ah,,,, been doing only JavaScript lately
 class Weather:
-    
+
     def _init_(self) :
         self.currentTemperature   = 72
         self.currentWindSpeed     = 0
@@ -38,5 +46,3 @@ while(1):
         # serve image via web browser
 
     # sleep 60 seconds
-
-
